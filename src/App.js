@@ -1,12 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+// import  { Login } from './components/Login'
+// import  {Home} from './components/Home'
+import Menu from './components/Menu'
+// import {Signup} from './components/Signup'
+// import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Switch } from 'react-router-dom';
+import Portfolio from './components/Portfolio';
+import About from './components/About';
+import Show from './components/Show';
 
 function App() {
   return (
-    <div className="App">
-      <h1>This is my first web site</h1>
-    </div>
+   <BrowserRouter>
+     <div>
+     <Menu />
+       <Switch>
+       <Route path ="/" exact component={Show}></Route>
+         <Route path ="/About" component={About}></Route>
+         {/* <Route path ="/Signup" exact component={Signup}></Route>
+         <Route path ="/Home" exact component={Home}></Route>          */}
+       </Switch>
+     </div>
+   </BrowserRouter>
   );
 }
 
