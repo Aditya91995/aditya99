@@ -4,7 +4,7 @@ export class About extends Component {
     render() {
         return (
             <div>
-                <h1>hi</h1>
+                <h1>hi this is Aditya</h1>
             </div>
         )
     }

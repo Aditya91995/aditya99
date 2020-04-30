@@ -20,6 +20,9 @@ export class Menu extends Component {
                     <li className="nav-item ml-4">
                     <Link to ="Home" className="text-white">Home</Link>
                     </li>
+                    <li className="nav-item ml-4">
+                    <Link to ="./calculator/CalculatorApp" className="text-white">Calculator</Link>
+                    </li>
                 </ul>
                 
             </div>

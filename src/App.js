@@ -9,6 +9,11 @@ import {BrowserRouter, Route, Switch } from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Show from './components/Show';
+import KeyPadComponent from './components/calculator/KeyPadComponent'
+import ResultComponent from './components/calculator/ResultComponent'
+import CalculatorApp from './components/calculator/CalculatorApp'
+
+
 
 function App() {
   return (
@@ -18,6 +23,9 @@ function App() {
        <Switch>
        <Route path ="/" exact component={Show}></Route>
          <Route path ="/About" component={About}></Route>
+         <Route path ="/Calculator" component={CalculatorApp}></Route>
+
+         
          {/* <Route path ="/Signup" exact component={Signup}></Route>
          <Route path ="/Home" exact component={Home}></Route>          */}
        </Switch>
